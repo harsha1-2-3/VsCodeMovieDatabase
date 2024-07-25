@@ -1,0 +1,108 @@
+/* Header.js */
+.HeaderBg {
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #37383b;
+    padding: 10px;
+    box-shadow: 0px 3px 10px 1px #37383b;
+    background-color: black;
+  }
+  
+  .LogoHead {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .InputCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .InputBox {
+    background-color: transparent;
+    border: 1.5px solid #37383b;
+    border-radius: 3px;
+    padding: 4px;
+    cursor: text;
+    outline: none;
+    color: white;
+    width: 120px;
+  }
+  
+  .SearchBtn {
+    color: white;
+    border: 1.3px solid #37383b;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 25px;
+    width: 65px;
+    margin-top: 5px;
+    box-shadow: 2px 2px 7px 1px #37383b inset;
+  }
+  
+  .LinksCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  
+  .Link {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  
+  @media (min-width: 992px) {
+    .HeaderBg {
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 8vh;
+    }
+  
+    .InputBox {
+      border: 2.5px solid #37383b;
+      width: 250px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  
+    .SearchBtn {
+      height: 30px;
+      border: 2.5px solid #37383b;
+      width: 80px;
+      margin: 0px;
+    }
+  
+    .LogoHead {
+      font-size: 40px;
+    }
+  
+    .InputCont {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .LinksCont {
+      flex-direction: row;
+    }
+  
+    .Link {
+      margin: 10px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }

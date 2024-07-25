@@ -1,0 +1,130 @@
+/* MovieDetails.js */
+.MovieDetailsBg {
+    background-color: black;
+    min-height: 100vh;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .MovieMainImg {
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 40px;
+    box-shadow: 1px 1px 1px 1px rgb(56, 56, 57);
+  }
+  
+  .DetailsCont {
+    padding: 15px;
+    padding-top: 5px;
+  }
+  
+  .MovieName {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .MovieDetailsCont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .DetailCont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .DetailHead {
+    color: white;
+    font-size: 13px;
+    margin: 0px;
+    margin-bottom: 5px;
+  }
+  
+  .DetailPara {
+    color: #e6e4df;
+    font-size: 10px;
+    margin: 0px;
+  }
+  
+  .DetailParaUl {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .CastDetailsUl {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    overflow-x: scroll;
+    list-style-type: none;
+    padding: 0px;
+  }
+  
+  .CastDetailsLi {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+  }
+  
+  .CastImg {
+    height: 90px;
+    width: 90px;
+    border-radius: 7px;
+    margin: 0px;
+    margin-bottom: 7px;
+  }
+  
+  @media (min-width: 768px) {
+    .MovieMainImg {
+      height: 550px;
+      width: 400px;
+      box-shadow: 1px 1px 3px 3px rgb(56, 56, 57);
+
+    }
+  
+    .DetailsCont {
+      padding: 25px;
+    }
+  
+    .MovieName {
+      font-size: 45px;
+    }
+  
+    .DetailHead {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+  
+    .DetailPara {
+      font-size: 22px;
+    }
+  
+    .DetailCont {
+      margin-right: 45px;
+      margin-bottom: 20px;
+    }
+  
+    .CastDetailsLi {
+      margin: 20px;
+    }
+  
+    .CastImg {
+      height: 200px;
+      width: 170px;
+    }
+  }

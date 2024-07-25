@@ -1,0 +1,46 @@
+/* TopRated.js, Upcoming, Searched + MovieLi + Popular  */
+.TopRatedBg {
+    min-height: 130vh;
+    padding: 10px;
+    background-color: black;
+  }
+  
+  .TopRatedHead {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    text-decoration: underline navy;
+    margin: 0px;
+  }
+  
+  .TopRatedUl {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  
+  .NavBtnsCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: transparent;
+    width: 100%;
+  }
+  .NavBtns {
+    color: white;
+    background-color: #ffffff22;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    height: 60px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }

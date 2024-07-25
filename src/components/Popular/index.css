@@ -1,0 +1,134 @@
+/* Popular */
+
+.TopRatedBg {
+    min-height: 100vh;
+    padding: 10px;
+    background-color: black;
+  }
+  
+  .TopRatedHead {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    text-decoration: underline navy;
+    margin: 0px;
+  }
+  
+  .TopRatedUl {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  
+  .PopularBg {
+    min-height: 100vh;
+    background-color: black;
+  }
+  
+  .Section {
+    margin: 10px;
+    padding-left: 20px;
+  }
+  
+  .Head {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline lightblue dashed;
+  }
+  
+  .HeadP {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline lightblue dashed;
+  }
+  
+  .MoviesUl {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    overflow-x: scroll;
+    padding: 0px;
+    margin: 0px;
+    min-height: 150px;
+  }
+  
+  .MoviesUlP {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    padding: 0px;
+    margin: 0px;
+    min-height: 150px;
+  }
+  
+  .NavBtnsCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: transparent;
+    width: 100%;
+  }
+  .NavBtns {
+    color: white;
+    background-color: #ffffff22;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    height: 60px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  @media (min-width: 992px) {
+    .Section {
+      margin: 20px;
+    }
+  
+    .Head {
+      font-size: 35px;
+    }
+  
+    .MovieImg {
+      height: 200px;
+      width: 160px;
+    }
+  
+    .MovieLi {
+      margin: 15px;
+    }
+  
+    .TitleVoteCont {
+      padding: 15px;
+    }
+  
+    .Title {
+      font-size: 13px;
+    }
+  
+    .ViewBtn {
+      height: 50px;
+      font-size: 18px;
+    }
+  
+    .VoteImg {
+      height: 17px;
+      width: 17px;
+    }
+  
+    .Vote {
+      font-size: 17px;
+    }
+  }
