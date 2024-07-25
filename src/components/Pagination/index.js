@@ -47,11 +47,11 @@ class Pagination extends Component {
     return (
       <div className="NavBtnsCont">
         <button type="button" className="NavBtns" onClick={this.onPrevPage}>
-          <-Prev
+          Prev
         </button>
-        <p className="pageNo">{pageNo}</p>
+        <p className="pageNo">...{pageNo}...</p>
         <button type="button" className="NavBtns" onClick={this.onNextPage}>
-          Next->
+          Next
         </button>
       </div>
     )
