@@ -1,11 +1,13 @@
 import {Component} from 'react'
 import {Routes, Route} from 'react-router-dom'
 
+import LoginWithRouter from './components/Login'
 import Popular from './components/Popular'
 import TopRated from './components/TopRated'
 import Upcoming from './components/Upcoming'
 import MovieDetails from './components/MovieDetails'
 import SearchedResults from './components/SearchedResults'
+import ProtectedRoute from './components/ProtectedRoute'
 
 import PageContext from './context/PageContext'
 
@@ -59,11 +61,14 @@ class App extends Component {
       >
         <div className="MovieDBBg">
           <Routes>
-            <Route exact path="/" element={<Popular/>} />
-            <Route exact path="/top-rated" element={<TopRated />} />
-            <Route exact path="/upcoming" element={<Upcoming />} />
-            <Route exact path="/searched" element={<SearchedResults />} />
-            <Route exact path='/movie/:id' element={<MovieDetails />} />
+            <Route exact path='/login' element={<LoginWithRouter />}/>
+            <Route exact="/" element={<ProtectedRoute />}>
+              <Route index element={<Popular/>} />
+              <Route path="top-rated" element={<TopRated />} />
+              <Route path="upcoming" element={<Upcoming />} />
+              <Route path="searched" element={<SearchedResults />} />
+              <Route path='movie/:id' element={<MovieDetails />} />
+            </Route>
           </Routes>
         </div>
       </PageContext.Provider>
