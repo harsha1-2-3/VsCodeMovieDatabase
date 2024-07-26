@@ -46,12 +46,12 @@ class Login extends Component {
     Cookies.set('jwt_token', jwtToken, { expires: 30 });
     // const navigate=useNavigate()
     this.props.navigate('/')
-    console.log('s')
+    console.log('Login Success')
   };
 
   onFailureLogin = data => {
     this.setState({ isError: true, errorMsg: data.error_msg });
-    console.log('f')
+    console.log('Login Failed')
 
   };
 
@@ -68,7 +68,7 @@ class Login extends Component {
           <img
             className="loginLogo"
             alt="website logo"
-            src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
+            src="https://play-lh.googleusercontent.com/ZVuzhksT-SVMPRRG_QiAurxc0Ex800HkKPRH6uFMW-akgB1Rmp11v3SuR67LklNlCA=w600-h300-pc0xffffff-pd"
           />
           <div className="inputCont">
             <label className="labelPara" htmlFor="username">

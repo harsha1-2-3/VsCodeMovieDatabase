@@ -7,7 +7,7 @@
   }
   
   .bgLogin {
-    background-color: #000000;
+    background-image: url('https://wallpapers.com/images/featured/movie-9pvmdtvz4cb0xl37.jpg');
     background-size: cover;
     min-height: 100vh;
     display: flex;
@@ -27,8 +27,8 @@
   }
   
   .loginLogo {
-    height: 25px;
-    width: 85px;
+    height: 40px;
+    width: 40px;
     margin-bottom: 20px;
   }
   
@@ -61,7 +61,7 @@
   
   .loginBtn {
     color: white;
-    background-color: #6366f1;
+    background-color: #ff0b37;
     height: 40px;
     width: 100%;
     border: 0px;
