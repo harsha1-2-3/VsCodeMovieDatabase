@@ -17,7 +17,7 @@
   }
   
   .login {
-    background-color: #272727;
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,8 +97,8 @@
     }
   
     .loginLogo {
-      height: 45px;
-      width: 150px;
+      height: 60px;
+      width: 60px;
     }
   
     .labelPara {
