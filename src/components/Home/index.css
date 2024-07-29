@@ -1,0 +1,42 @@
+.HomeBg {
+    min-height: 100vh;
+    margin: 0px;
+    background-color: black;
+}
+
+.HomeHead {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    text-decoration: underline red;
+    margin: 0px;
+}
+
+.Section {
+    margin: 0px;
+    padding: 20px;
+}
+
+.Head {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+
+}
+
+.MoviesUl {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    overflow-x: scroll;
+    padding: 0px;
+    margin: 0px;
+    min-height: 180px;
+    list-style-type: none;
+
+}
+
+

@@ -3,7 +3,7 @@
     background-color: black;
     border-radius: 5px;
     margin: 5px;
-    width: 160px;
+    width: 180px;
     height: auto;
   }
   
@@ -83,8 +83,9 @@
     }
   
     .MovieImg {
-      height: 250px;
+      height: auto;
       min-width: 100%;
+      margin-top: 0px;
     }
   
     .MovieLi {

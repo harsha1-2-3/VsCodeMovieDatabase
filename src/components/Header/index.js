@@ -1,9 +1,15 @@
 import {Link, useNavigate} from 'react-router-dom'
+import Cookies from 'js-cookie'
 import PageContext from '../../context/PageContext'
 import './index.css'
 
 const Header = () => {
   const navigate=useNavigate()
+  const clickedLogout=()=>{
+    Cookies.remove('jwt_token')
+    navigate('/login')
+    console.log('Logged Out')
+  }
   const renderSearchBar = () => (
     <PageContext.Consumer>
       {value => {
@@ -43,7 +49,7 @@ const Header = () => {
       {renderSearchBar()}
       <ul className="LinksCont">
         <li>
-          <Link to="/" className="Link">
+          <Link to="/popular" className="Link">
             Popular
           </Link>
         </li>
@@ -56,6 +62,9 @@ const Header = () => {
           <Link to="/upcoming" className="Link">
             Upcoming
           </Link>
+        </li>
+        <li>
+          <button onClick={clickedLogout} className="LogoutBtn" type="button">Logout</button>
         </li>
       </ul>
     </nav>

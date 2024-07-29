@@ -2,6 +2,7 @@ import {Component} from 'react'
 import {Routes, Route} from 'react-router-dom'
 
 import LoginWithRouter from './components/Login'
+import Home from './components/Home'
 import Popular from './components/Popular'
 import TopRated from './components/TopRated'
 import Upcoming from './components/Upcoming'
@@ -63,7 +64,8 @@ class App extends Component {
           <Routes>
             <Route exact path='/login' element={<LoginWithRouter />}/>
             <Route exact="/" element={<ProtectedRoute />}>
-              <Route index element={<Popular/>} />
+              <Route index element={<Home/>} />
+              <Route path='popular' element={<Popular/>} />
               <Route path="top-rated" element={<TopRated />} />
               <Route path="upcoming" element={<Upcoming />} />
               <Route path="searched" element={<SearchedResults />} />

@@ -65,6 +65,20 @@
     font-size: 15px;
     margin-bottom: 5px;
   }
+  .LogoutBtn{
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    color: red;
+    font-weight:bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 80px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+  
   
   @media (min-width: 992px) {
     .HeaderBg {
@@ -105,4 +119,11 @@
       font-weight: bold;
       font-size: 20px;
     }
+    .LogoutBtn{
+      margin: 10px;
+      font-weight: bold;
+      font-size: 20px;
+      height: 40px;
+      width: 100px;
+      }
   }
