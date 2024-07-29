@@ -68,7 +68,12 @@ class Login extends Component {
           <img
             className="loginLogo"
             alt="website logo"
+<<<<<<< HEAD
             src="https://play-lh.googleusercontent.com/ZVuzhksT-SVMPRRG_QiAurxc0Ex800HkKPRH6uFMW-akgB1Rmp11v3SuR67LklNlCA"          />
+=======
+            src="https://play-lh.googleusercontent.com/ZVuzhksT-SVMPRRG_QiAurxc0Ex800HkKPRH6uFMW-akgB1Rmp11v3SuR67LklNlCA"
+          />
+>>>>>>> fbea86e7b6bd79c36e88ad4fa9195b13898d305d
           <div className="inputCont">
             <label className="labelPara" htmlFor="username">
               USERNAME

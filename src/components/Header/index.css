@@ -65,7 +65,12 @@
     font-size: 15px;
     margin-bottom: 5px;
   }
+<<<<<<< HEAD
   .LogoutBtn{
+=======
+
+.LogoutBtn{
+>>>>>>> fbea86e7b6bd79c36e88ad4fa9195b13898d305d
     text-decoration: none;
     cursor: pointer;
     outline: none;
@@ -73,18 +78,24 @@
     font-weight:bold;
     font-size: 15px;
     margin-bottom: 5px;
+<<<<<<< HEAD
     height: 30px;
     width: 80px;
     background-color: transparent;
     border: 1px solid white;
 }
   
+=======
+}
+>>>>>>> fbea86e7b6bd79c36e88ad4fa9195b13898d305d
   
   @media (min-width: 992px) {
     .HeaderBg {
       padding-left: 20px;
       padding-right: 20px;
-      height: 8vh;
+    padding-top:10px;
+        
+      min-height: 8vh;
     }
   
     .InputBox {
@@ -119,6 +130,7 @@
       font-weight: bold;
       font-size: 20px;
     }
+<<<<<<< HEAD
     .LogoutBtn{
       margin: 10px;
       font-weight: bold;
@@ -127,3 +139,11 @@
       width: 100px;
       }
   }
+=======
+      .LogoutBtn{
+      margin: 10px;
+      font-weight: bold;
+      font-size: 20px;
+      }
+  }
+>>>>>>> fbea86e7b6bd79c36e88ad4fa9195b13898d305d
