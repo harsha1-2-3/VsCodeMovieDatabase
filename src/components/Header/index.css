@@ -74,7 +74,7 @@
     font-weight:bold;
     font-size: 15px;
     margin-bottom: 5px;
-  
+}
   @media (min-width: 992px) {
     .HeaderBg {
       padding-left: 20px;
