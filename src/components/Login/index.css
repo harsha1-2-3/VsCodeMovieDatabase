@@ -17,11 +17,7 @@
   }
   
   .login {
-<<<<<<< HEAD
-    background-color:black;
-=======
     background-color: black;
->>>>>>> fbea86e7b6bd79c36e88ad4fa9195b13898d305d
     display: flex;
     flex-direction: column;
     justify-content: center;
