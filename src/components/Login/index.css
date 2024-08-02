@@ -75,13 +75,6 @@
     transition: all 0.08s linear;
   }
   
-  .loginBtn:hover {
-    background-color: #ff0b37;
-  }
-  
-  .loginBtn:active {
-    transform: translateY(5px);
-  }
   
   .errorLogin {
     color: #ff0b37;
