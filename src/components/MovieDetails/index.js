@@ -1,18 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { useState, useEffect } from 'react';
 import Header from '../Header';
 import MainImg from './styleJs';
@@ -51,6 +36,7 @@ const MovieDetails = () => {
 
       setMovieObj(updatedObj);
       setGenresList(data.genres);
+      console.log(data.genres);
     };
 
     const fetchCastDetails = async () => {
@@ -108,15 +94,19 @@ const MovieDetails = () => {
               <p className="DetailPara">{minsToHrs(movieObj.runtime)}</p>
             </div>
             <div className="DetailCont">
-              <h1 className="DetailHead">Genres</h1>
-              <ul className="DetailParaUl">
-                {genresList.map(genre => (
-                  <li key={genre.id} className="DetailParaLi">
-                    {genre.name}
-                  </li>
-                ))}
-              </ul>
-            </div>
+  <h1 className="DetailHead">Genres</h1>
+  <ul className="DetailParaUl">
+    {genresList.length > 0 ? (
+      genresList.map(genre => (
+        <li key={genre.id} className="DetailParaLi">
+          {genre.name}
+        </li>
+      ))
+    ) : (
+      <li className="DetailParaLi">No genres available</li>
+    )}
+  </ul>
+</div>
               <div className="DetailCont">
   <h1 className="DetailHead">Release Date</h1>
   <p className="DetailPara">{movieObj.releaseDate}</p>
