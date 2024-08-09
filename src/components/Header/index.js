@@ -19,6 +19,12 @@ const Header = () => {
           onTriggerSearchBtn()
           navigate('/searched')
         }
+  const  onEnterSearchInput = event => {
+    if (event.key === 'Enter') {
+      onTriggerSearchBtn()
+      navigate('/searched')
+    }
+    }
         return (
           <div className="InputCont">
             <input
@@ -32,6 +38,7 @@ const Header = () => {
               type="button"
               onClick={onSearchHandler}
               className="SearchBtn"
+                onKeyDown={onEnterSearchInput}
             >
               Search
             </button>
