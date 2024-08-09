@@ -94,7 +94,8 @@ const MovieDetails = () => {
               <p className="DetailPara">{minsToHrs(movieObj.runtime)}</p>
             </div>
             <div className="DetailCont">
-  <h1 className="DetailHead">Genres</h1>
+  
+{genresList.length>0?(<h1 className="DetailHead">Genres</h1>):(<li className="DetailParaLi">No genres available</li>)}
   <ul className="DetailParaUl">
     {genresList.length > 0 ? (
       genresList.map(genre => (
