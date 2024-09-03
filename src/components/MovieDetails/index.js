@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom';
 const MovieDetails = () => {
   const [movieObj, setMovieObj] = useState({});
   const [castList, setCastList] = useState([]);
-  const [genresList, setGenresList] = useState([]);
+ // const [genresList, setGenresList] = useState([]);
   const params = useParams();
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const MovieDetails = () => {
       const data = await response.json();
       const updatedObj = {
         backdropPath: data.backdrop_path,
-        genres: data.genres,
+        budget: data.budget,
         id: data.id,
         overview: data.overview,
         posterPath: data.poster_path,
@@ -35,8 +35,8 @@ const MovieDetails = () => {
       };
 
       setMovieObj(updatedObj);
-      setGenresList(data.genres);
-      console.log(data.genres);
+     // setGenresList(data.genres);
+      // console.log(data.genres);
     };
 
     const fetchCastDetails = async () => {
@@ -94,8 +94,9 @@ const MovieDetails = () => {
               <p className="DetailPara">{minsToHrs(movieObj.runtime)}</p>
             </div>
             <div className="DetailCont">
-  
-{genresList.length>0?(<h1 className="DetailHead">Genres</h1>):(<li className="DetailParaLi">No genres available</li>)}
+  <h1 className="DetailHead">Budget</h1>
+  <p className="DetailPara">${movieObj.budget}</p>
+/*{genresList.length>0?(<h1 className="DetailHead">Genres</h1>):(<li className="DetailParaLi">No genres available</li>)}
   <ul className="DetailParaUl">
     {genresList.length > 0 ? (
       genresList.map(genre => (
@@ -106,7 +107,7 @@ const MovieDetails = () => {
     ) : (
       <li className="DetailParaLi">No genres available</li>
     )}
-  </ul>
+  </ul>*/
 </div>
               <div className="DetailCont">
   <h1 className="DetailHead">Release Date</h1>
